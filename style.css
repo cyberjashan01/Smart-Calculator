@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  .intro, .calculator {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .intro input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .intro button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00ffe7;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  #greetUser {
+    margin-bottom: 15px;
+  }
+  
+  .calculator {
+    width: 300px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .calculator.scientific-mode {
+    width: 500px;
+  }
+  
+  .calculator input {
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #00ffe7;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #scientificButtons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00ffe7;
+    color: #000;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
